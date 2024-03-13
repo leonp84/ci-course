@@ -1,0 +1,16 @@
+body {
+    font-size: xx-large;
+    font-family: sans-serif;
+    line-height: 200%;
+    padding: 0 40px;
+  }
+
+li {
+    cursor: pointer;
+    border: 1px solid red;
+    width: 30%;
+  }
+
+ul > li {
+    padding-left: 10px;
+}
