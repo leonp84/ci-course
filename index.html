@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Javscript ToDo List Test - Version 2</title>
 </head>
 <body>
-    <p class="theme">Dark/Light</p>
-    <input type="text" id="newUserItem">
-    <input type="button" id="submit" value="Add To Do">
-    <ul id="list">
+    <main>
+        <div class="wrapper">
+            <input type="text" id="userInput">
+            <input type="button" id="inputButton" value="Add New To-Do Item">
+            <ul>
+                <!-- List Display - Javascript -->
+            </ul>
+            <input type="button" id="sortButton" value="Sort The List">
+            <input type="button" id="showActive" value="[Active]">
+            <input type="button" id="showCompleted" value=" [Done] ">
+            <input type="button" id="showAll" value="   [All]   ">
+            <input type="button" id="clearCompleted" value="[Clear Completed]">
+            <p id="items-left"></p>
+        </div>
+    </main>
 
-    </ul>
-    <script src="test.js"></script>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>

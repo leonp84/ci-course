@@ -1,0 +1,56 @@
+body {
+    font-size: x-large;
+    font-family: sans-serif;
+    line-height: 150%;
+    padding: 0 60px;
+    background-color: whitesmoke;
+  }
+
+p {
+    border: 1px solid blue;
+    background-color: blanchedalmond;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+ul > li {
+    padding: 15px 20px;
+    background-color: rgb(67, 62, 62);
+    cursor: pointer;
+    border: 2px solid black;
+    width: 60%;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+li::marker {
+  color: rgb(67, 62, 62);
+}
+
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+li > input {
+  margin: 20px;
+}
+
+#editing {
+  margin: 0;
+  font-size: x-large;
+  background-color: transparent;
+  color: inherit;
+  width: 80%;
+  border: none;
+}
+
+span {
+  cursor: text;
+}

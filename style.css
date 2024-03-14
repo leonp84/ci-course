@@ -1,56 +1,55 @@
 body {
-    font-size: x-large;
-    font-family: sans-serif;
-    line-height: 150%;
-    padding: 0 60px;
-    background-color: whitesmoke;
-  }
-
-p {
-    border: 1px solid blue;
-    background-color: blanchedalmond;
-    padding: 25px;
-    text-align: center;
-    cursor: pointer;
-  }
-
-ul > li {
-    padding: 15px 20px;
-    background-color: rgb(67, 62, 62);
-    cursor: pointer;
-    border: 2px solid black;
-    width: 60%;
-    color: white;
-    list-style-type: none;
+    background-color: rgb(169, 158, 158);
     display: flex;
-    flex-direction: row;
-    flex-wrap: none;
-    justify-content: left;
     align-items: center;
-    margin-bottom: 15px;
+    justify-content: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-li::marker {
-  color: rgb(67, 62, 62);
+main {
+    background-color: rgb(86, 81, 81);
+    width: 85%;
+    min-height: 500px;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
 }
 
-input[type=checkbox] {
-  cursor: pointer;
+.wrapper {
+    width: 85%;
+    background-color: inherit;
+    margin: 25px 0;
 }
 
-li > input {
-  margin: 20px;
+input {
+    padding: 10px;
+    margin: 5px;
+    font-size: x-large;
 }
 
-#editing {
-  margin: 0;
-  font-size: x-large;
-  background-color: transparent;
-  color: inherit;
-  width: 80%;
-  border: none;
+input[type="checkbox"] {
+    margin: 10px;
 }
 
-span {
-  cursor: text;
+li {
+    border: 1px dotted black;
+    font-size: xx-large;
+    line-height: 150%;
+    margin: 20px 0;
+    list-style-type: none;
+}
+
+.listDisplay {
+    color: rgb(255, 255, 255);
+}
+
+.hoverClass {
+    color: rgb(107, 40, 40);
+}
+
+.strikethrough {
+    text-decoration: line-through;
 }

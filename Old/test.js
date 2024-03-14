@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementsByTagName('p')[0].addEventListener('click', changeTheme);
-  document.getElementById('submit').addEventListener('click', addItem);
+  document.getElementById('submit').addEventListener('click', function(event) {
+      let userInput = document.getElementById('newUserItem').value;
+      addItem(userInput); });
   document.getElementById('newUserItem').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') { 
       let userInput = document.getElementById('newUserItem').value;
@@ -27,6 +29,7 @@ function addItem (userInput) {
 
   lArray.unshift(userInput);
   newItem.textContent = lArray[0];
+  console.log(lArray);
 
   newListItem.appendChild(newCheckBox);
   newListItem.appendChild(newItem);
@@ -67,7 +70,7 @@ function editItem() {
       newItem.addEventListener('mouseout', colorItem);
       newItem.addEventListener('click', editItem);
 
-      lArray.unshift(content);
+      lArray.push(content);
       newItem.textContent = lArray[0];
        this.parentNode.appendChild(newItem);
       this.remove();
@@ -87,9 +90,7 @@ function lightMode() {
   for (i = 0; i < list.children.length; i++) {
     list.children[i].style.backgroundColor = 'rgb(67, 62, 62)';
     list.children[i].children[1].style.color = 'whitesmoke';
-    console.log(list.children[i]);
-    console.log(list.children[i].children[1]);
       }
-  console.log(document.body.outerHTML);
+  // console.log(document.body.outerHTML);
 }
 
