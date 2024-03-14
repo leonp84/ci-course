@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('toggleTheme').addEventListener('click', function() {
         toggleTheme()
     })
+    document.getElementById('help').addEventListener('click', function() {
+        showHelp()
+    })
     document.getElementById('userInput').addEventListener('keydown', function(event) {
         if (event.key === 'Enter' ) { addItem() }
     })
@@ -102,8 +105,6 @@ function displayList(type) {
     let listDisplay = "";
     let darkMode = (document.body.className === 'body-dark')
     if (darkMode) { listDisplay = 'listDisplay-dark' } else { listDisplay = 'listDisplay-light' }
-    console.log(listDisplay);
-    console.log(document.body.className);
 
     for (i = 0; i < thisArray.length; i++) {
         let newItem = `<input type="checkbox" class="checkbox"><span class="content ${listDisplay}">${thisArray[i].content}</span>
@@ -222,4 +223,15 @@ function toggleTheme() {
         document.body.children[0].setAttribute('class', 'main-dark')
     }
     displayList();
+}
+
+function showHelp() {
+    let helpButton = document.getElementById('help')
+    let helpBoxes = document.getElementById('info4')
+    console.log(helpBoxes);
+    console.log(helpBoxes.className);
+    let helpShown = (helpBoxes.className === 'hidden')
+    console.log(helpShown)
+    if (helpShown) { helpBoxes.setAttribute('class', ''); helpButton.value = "Help Off"; }
+    else { helpBoxes.setAttribute('class', 'hidden'); helpButton.value = "Help On"; }
 }

@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Javscript ToDo List Test - Version 2</title>
 </head>
-<body class="body-dark">
-    <main class="main-dark">
+<body class="body-light">
+    <main class="main-light">
         <div class="wrapper">
-            <input type="button" id="toggleTheme" value="Light / Dark Mode"><br>
+            <input type="button" id="toggleTheme" value="Light / Dark Mode">
+            <input type="button" id="help" value="Help On"><br>
             <input type="text" id="userInput">
             <label for="priority-button">Priority?</label>
             <input type="checkbox" name="priority-button" id="priority-button">
@@ -23,11 +24,11 @@
             <input type="button" id="showAll" value="   [All]   ">
             <input type="button" id="clearCompleted" value="[Clear Completed]">
             <p id="items-left"></p>
+            <div class="hidden" id="info4">Delete Completed Items From List</div>
+            
         </div>
     </main>
-
-
-
+        
 
     <script src="script.js"></script>
 </body>
